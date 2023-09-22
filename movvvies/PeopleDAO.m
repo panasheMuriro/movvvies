@@ -35,7 +35,7 @@
 
 
 -(void) addPersonWithName:(NSString *)name age:(NSString *)age{
-    Person *person = [[Person alloc] initWithName:@"Panashe" age:@"23"];
+    Person *person = [[Person alloc] initWithName:name age:age];
     [self.people addObject:person];
 }
 
