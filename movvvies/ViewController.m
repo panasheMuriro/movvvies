@@ -6,8 +6,11 @@
 //
 
 #import "ViewController.h"
+#import "PeopleDAO.h"
 
-@interface ViewController () 
+@interface ViewController ()
+@property (nonatomic) NSUInteger numOfPeople;
+@property (nonatomic, strong) NSArray *people;
 
 @end
 
@@ -20,19 +23,28 @@
     self.myTableView.delegate = self;
     self.myTableView.dataSource = self;
     
+    // DAO
     
+    PeopleDAO *peopleDao = [PeopleDAO sharedInstance];
+    [peopleDao addPersonWithName:@"Panashe Muriro" age:@"23"];
+    [peopleDao addPersonWithName:@"Paula" age:@"19"];
+    
+    self.numOfPeople = [peopleDao numOfPeople];
+    self.people = [peopleDao getAllPeople];
+
     
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 1;
+    return _numOfPeople;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
-
-    cell.textLabel.text = @"Panashe";
+    Person *person = self.people[indexPath.row];
+    
+    cell.textLabel.text = person.name;
 
       return cell;
 }
