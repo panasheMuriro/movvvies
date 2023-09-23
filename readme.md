@@ -2,7 +2,7 @@
 
 This GUI IOS app was made with `Objective-C` using XCode to display a few movies from the Top 250 tv-shows.
 
-Disclaimer: I don't own any rights to the IMDb content used in this app. The data is for informational purposes only. This app is not endorsed by or affiliated with IMDb. 
+_Disclaimer: I don't own any rights to the IMDb content used in this app. The data is for informational purposes only. This app is not endorsed by or affiliated with IMDb._
 
 Features
 * MVC design pattern
