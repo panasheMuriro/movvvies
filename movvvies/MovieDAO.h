@@ -13,8 +13,12 @@ NS_ASSUME_NONNULL_BEGIN
 @interface MovieDAO : NSObject
 
 +(instancetype) sharedInstance;
--(void) addMovieWithTitle:(NSString *)title caption: (NSString *) caption genre:(NSString *)genre coverPhotoLink:(NSString *)coverPhotoLink rating: (NSUInteger) rating year:(NSUInteger)year;
+-(void) addMovieWithTitle:(NSString *)title caption: (NSString *) caption genre:(NSString *)genre coverPhotoLink:(NSString *)coverPhotoLink rating: (NSString *)  rating year:(NSString *) year;
+
+-(void) initializeDefaultMovies;
 -(NSArray<MovieModel*> *) getAllMovies;
+
 @end
+
 
 NS_ASSUME_NONNULL_END

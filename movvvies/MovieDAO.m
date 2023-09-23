@@ -37,9 +37,13 @@
     return self;
 }
 
-- (void)addMovieWithTitle:(NSString *)title caption:(NSString *)caption genre:(NSString *)genre coverPhotoLink:(NSString *)coverPhotoLink rating:(NSUInteger)rating year:(NSUInteger)year{
+- (void)addMovieWithTitle:(NSString *)title caption:(NSString *)caption genre:(NSString *)genre coverPhotoLink:(NSString *)coverPhotoLink rating:(NSString *) rating year:(NSString *) year{
     MovieModel *movie = [[MovieModel alloc] initWithTitle:title caption:caption genre:genre coverPhotoLink:coverPhotoLink rating:rating year:year];
     [self.movies addObject:movie];
+}
+
+-(void) initializeDefaultMovies{
+    [self addMovieWithTitle:@"Breaking bad" caption:@"A chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine with a former student in order to secure his family's future." genre:@"Crime" coverPhotoLink:@"https://m.media-amazon.com/images/M/MV5BMjEyMzcxNTM5NV5BMl5BanBnXkFtZTcwMDAxOTM4NQ@@._V1_.jpg" rating:@"5" year:@"2006"];
 }
 
 -(NSArray*) getAllMovies{
