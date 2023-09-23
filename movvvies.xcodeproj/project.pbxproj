@@ -14,6 +14,9 @@
 		15780CA52ABD681C00169CDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15780CA42ABD681C00169CDD /* Assets.xcassets */; };
 		15780CA82ABD681C00169CDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15780CA62ABD681C00169CDD /* LaunchScreen.storyboard */; };
 		15780CAB2ABD681C00169CDD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 15780CAA2ABD681C00169CDD /* main.m */; };
+		15780CC12ABE0DAB00169CDD /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15780CC02ABE0DAB00169CDD /* DetailsViewController.m */; };
+		15780CC52ABE179300169CDD /* MovieModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 15780CC42ABE179300169CDD /* MovieModel.m */; };
+		15780CC92ABE19BC00169CDD /* MovieDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 15780CC82ABE19BC00169CDD /* MovieDAO.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,12 @@
 		15780CA72ABD681C00169CDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		15780CA92ABD681C00169CDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15780CAA2ABD681C00169CDD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		15780CBF2ABE0DAB00169CDD /* DetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
+		15780CC02ABE0DAB00169CDD /* DetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
+		15780CC32ABE179300169CDD /* MovieModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieModel.h; sourceTree = "<group>"; };
+		15780CC42ABE179300169CDD /* MovieModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieModel.m; sourceTree = "<group>"; };
+		15780CC72ABE19BC00169CDD /* MovieDAO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieDAO.h; sourceTree = "<group>"; };
+		15780CC82ABE19BC00169CDD /* MovieDAO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieDAO.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +81,12 @@
 				15780CA62ABD681C00169CDD /* LaunchScreen.storyboard */,
 				15780CA92ABD681C00169CDD /* Info.plist */,
 				15780CAA2ABD681C00169CDD /* main.m */,
+				15780CBF2ABE0DAB00169CDD /* DetailsViewController.h */,
+				15780CC02ABE0DAB00169CDD /* DetailsViewController.m */,
+				15780CC32ABE179300169CDD /* MovieModel.h */,
+				15780CC42ABE179300169CDD /* MovieModel.m */,
+				15780CC72ABE19BC00169CDD /* MovieDAO.h */,
+				15780CC82ABE19BC00169CDD /* MovieDAO.m */,
 			);
 			path = movvvies;
 			sourceTree = "<group>";
@@ -145,10 +160,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15780CC52ABE179300169CDD /* MovieModel.m in Sources */,
 				15780CA02ABD681900169CDD /* ViewController.m in Sources */,
 				15780C9A2ABD681900169CDD /* AppDelegate.m in Sources */,
 				15780CAB2ABD681C00169CDD /* main.m in Sources */,
+				15780CC12ABE0DAB00169CDD /* DetailsViewController.m in Sources */,
 				15780C9D2ABD681900169CDD /* SceneDelegate.m in Sources */,
+				15780CC92ABE19BC00169CDD /* MovieDAO.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

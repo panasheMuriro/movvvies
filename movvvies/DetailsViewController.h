@@ -20,10 +20,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (weak, nonatomic) IBOutlet UIImageView *coverPhoto;
 
-
-
-// picture
-
 @property (nonatomic, strong) MovieModel *selectedMovie;
 
 @end
