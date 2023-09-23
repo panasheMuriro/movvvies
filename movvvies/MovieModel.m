@@ -9,7 +9,7 @@
 
 @implementation MovieModel
 
-- (instancetype)initWithTitle:(NSString *)title caption:(NSString *)caption genre:(NSString *)genre coverPhotoLink:(NSString *)coverPhotoLink  rating:(NSUInteger)rating year:(NSUInteger)year{
+- (instancetype)initWithTitle:(NSString *)title caption:(NSString *)caption genre:(NSString *)genre coverPhotoLink:(NSString *)coverPhotoLink  rating:(NSString *) rating year:(NSString *) year{
     self = [super init];
     if(self){
         _title = title;
