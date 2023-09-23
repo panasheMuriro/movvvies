@@ -9,5 +9,6 @@ Features
 * Page navigation with data passed to the next page
 
 ## Screenshots
+![movvvies](https://github.com/panasheMuriro/movvvies/assets/87081585/d8744c74-e390-4c55-a555-17b952626672)
 
 
